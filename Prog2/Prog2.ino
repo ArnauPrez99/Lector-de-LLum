@@ -36,21 +36,21 @@ void loop()
 {
   valLdr0 = analogRead(ldr0);   // llegir valor ldr0
   Serial.println(valLdr0);
-  valLdr0 = map(valLdr0, 0, 1023, 0, 50);   // mapejar valor de 0-1023 a 0-255
+  valLdr0 = map(valLdr0, 350, 680, 0, 255);   // mapejar valor de 0-1023 a 0-255
   analogWrite(led0, valLdr0);    // actualitzar l'estat del led
-  delay(1000);
+ // delay(1000);
   
   valLdr1 = analogRead(ldr1);   // llegir valor ldr1
   Serial.println(valLdr1);
-  valLdr1 = map(valLdr1, 0, 1023, 0, 50);   // mapejar valor de 0-1023 a 0-255
+  valLdr1 = map(valLdr1, 280, 680, 0, 255);   // mapejar valor de 0-1023 a 0-255
   analogWrite(led1, valLdr1);    // actualitzar l'estat del led
-  delay(1000);
+ // delay(1000);
   
   valLdr2 = analogRead(ldr2);   // llegir valor ldr2
   Serial.println(valLdr2);
-  valLdr2 = map(valLdr2, 0, 1023, 0, 50);   // mapejar valor de 0-1023 a 0-255
+  valLdr2 = map(valLdr2, 280, 680, 0, 255);   // mapejar valor de 0-1023 a 0-255
   analogWrite(led2, valLdr2);    // actualitzar l'estat del led
-  delay(1000);
+  //delay(1000);
   
 
 }
