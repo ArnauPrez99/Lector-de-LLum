@@ -25,7 +25,7 @@ void loop()
 {
   valLdr0 = analogRead(ldr0);   // llegir valor ldr
   
-  valLdr0 = map(valLdr0, 0, 1023, 0, 255);   // mapejar valor de 0-1023 a 0-255
+  valLdr0 = map(valLdr0, 0, 1023, 0, 50);   // mapejar valor de 0-1023 a 0-255
   
   analogWrite(led0, valLdr0);    // actualitzar l'estat del led
 }
